@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="HomeworkCodingChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="averageLabel" destination="w4N-CI-OXF" id="Tew-6o-N5m"/>
+                <outlet property="numberLabel" destination="rhb-v5-unh" id="8wE-0P-Wcs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="HomeworkCodingChallenge">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITa-7O-usD" customClass="HeaderView" customModule="HomeworkCodingChallenge" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <color key="backgroundColor" red="0.45307426634700554" green="1" blue="0.99886677562360038" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhb-v5-unh">
+                    <rect key="frame" x="307" y="29.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4N-CI-OXF">
+                    <rect key="frame" x="26" y="29.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ITa-7O-usD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="09S-88-Iae"/>
+                <constraint firstItem="ITa-7O-usD" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="3Uk-OR-X66"/>
+                <constraint firstItem="ITa-7O-usD" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="4dg-g0-ewa"/>
+                <constraint firstItem="ITa-7O-usD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7Vp-RH-9kW"/>
+                <constraint firstItem="rhb-v5-unh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7XU-Fa-usO"/>
+                <constraint firstItem="w4N-CI-OXF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="26" id="A6G-Ht-Vc8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rhb-v5-unh" secondAttribute="trailing" constant="26" id="K0c-or-Cyc"/>
+                <constraint firstItem="ITa-7O-usD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ZmT-oe-1gB"/>
+                <constraint firstItem="w4N-CI-OXF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aHS-gf-3xG"/>
+                <constraint firstItem="ITa-7O-usD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nGV-0M-dYr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="averageLabel" destination="w4N-CI-OXF" id="Obm-jq-n0e"/>
+                <outlet property="numberLabel" destination="rhb-v5-unh" id="gYK-7l-m5l"/>
+            </connections>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ygk-Qz-GVy">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-307" y="145"/>
+        </label>
+    </objects>
+</document>
